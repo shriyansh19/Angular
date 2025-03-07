@@ -1,6 +1,6 @@
 <div class="container">
   <div class="card">
-    <h1>Hello <span class="username-text">{{this.username}}</span> from <span class="brand">BridgeLabz</span></h1>
+    <h1>Hello <span class="username-text">{{this.userName}}</span> from <span class="brand">BridgeLabz</span></h1>
     <img 
       [src]="imgURL" 
       (click)="onClick($event)"
@@ -8,7 +8,8 @@
       class="logo"
     >
     <div class="input-container">
-      <input [(ngModel)]="username" placeholder="Enter your username" class="input-box"/> 
+      <input [(ngModel)]="userName" placeholder="Enter your username" class="input-box"/> 
+      <span class= error_output >{{ nameError }}</span>
     </div>
   </div>
 </div>
