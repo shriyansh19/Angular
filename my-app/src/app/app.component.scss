@@ -1,17 +1,82 @@
-h1 {
-    color: rgba(255, 0, 17, 0.338); 
-    display: flex;
-    justify-self:center;
-    align-self: center; 
-     font-size:large; 
-     height: 100vh;
+body{
+    animation: gradientBG 10s ease infinite alternate;
 }
 
-img{
+/* Smooth gradient animation */
+@keyframes gradientBG {
+    0% { background: linear-gradient(135deg, #ff9a9e, #fad0c4); }
+    100% { background: linear-gradient(135deg, #ffdde1, #ff9a9e); }
+  }
+
+.container {
     display: flex;
-    margin: auto;
-    width: 25%;
-}
-img:hover{
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #f2f0f59f, #e8dfeaec);
+  }
+  
+  .card {
+    background: rgba(255, 255, 255, 0.718);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 350px;
+  }
+
+  .card:hover {
+    transform: scale(1.05);
+  }
+  
+  h1 {
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .brand {
+    color: #ff5733;
+    font-weight: bold;
+  }
+
+  /* Animated Username */
+.username-text {
+    font-weight: bold;
+    color: #5c95f2;
+    font-size: 24px;
+    transition: color 0.5s ease-in-out;
+  }
+  
+  .logo {
+    width: 150px;
     cursor: pointer;
-}
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .logo:hover {
+    transform: scale(1.1);
+  }
+  
+  .input-container {
+    margin-top: 10px;
+  }
+  
+  .input-box {
+    width: 90%;
+    padding: 12px;
+    border: 3px solid #ff5733;
+    border-radius: 8px;
+    outline: none;
+    font-size: 16px;
+    background: #fff5f5;
+    color: #333;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .input-box:focus {
+    border-color: #d84315;
+    box-shadow: 0px 0px 8px rgba(255, 87, 51, 0.5);
+  }
+  

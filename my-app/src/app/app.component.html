@@ -1,5 +1,14 @@
-<div>
-  <h1>{{this.title}}</h1>
-  <img [src] = "imgURL" (click)="onClick($event)"
-  alt="The BridgeLabz logo: a Bridge to Employment through a Lab Works.">
+<div class="container">
+  <div class="card">
+    <h1>Hello <span class="username-text">{{this.username}}</span> from <span class="brand">BridgeLabz</span></h1>
+    <img 
+      [src]="imgURL" 
+      (click)="onClick($event)"
+      alt="The BridgeLabz logo: a Bridge to Employment through a Lab Works."
+      class="logo"
+    >
+    <div class="input-container">
+      <input [(ngModel)]="username" placeholder="Enter your username" class="input-box"/> 
+    </div>
+  </div>
 </div>
